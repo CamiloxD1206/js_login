@@ -6,6 +6,8 @@
          alert('inicio de sesion exitoso')
          window.location = 'inicio_usumv.html'
 
+     } else {
+         alert('usuario y/o contraseña incorrecta');
      }
  }
  //-------------------------------------------------

@@ -1,9 +1,10 @@
 //funcion de para hacer los cambios a motoposada
 function motoposada() {
     const cambiomp = document.querySelector('.bienvenida').textContent = 'BIENVENIDO MOTOPOSADA';
+
     const solicitudes = document.querySelector('#quienes_somos h1').textContent = 'Solicitudes'
     const servicios = document.querySelector('#servicios h1').textContent = 'Comentarios'
-        //--------------------lista----------------------------
+        //--------------------lista(barra de navegacion)----------------------------
     const lista = document.querySelector('.lista')
         //---------solicitudes para motoposada--------------------------------
     const solicitudesmp = document.createElement('li')
@@ -24,10 +25,36 @@ function motoposada() {
     comentariosmp.appendChild(comentariosmplink);
     const elementoExistente1 = lista2.children[2];
     lista2.insertBefore(comentariosmp, elementoExistente1);
-
     //--------eliminacion-enlaces antiguos
     var elemento = lista.children[3];
     lista.removeChild(elemento);
+    //------------------dropdown-------------------
+    const cambio = document.querySelector('.dropdown-menu ');
+    const motoviajerocambio = document.createElement('li');
+    motoviajerocambio.onclick = function llamado() {
+        window.location = 'inicio_usumv.html';
+    }
+    const motoviajerolink = document.createElement('a');
+    motoviajerocambio.textContent = 'Ser motoviajero';
+    cambio.appendChild(motoviajerocambio);
+    motoviajerocambio.appendChild(motoviajerolink);
+    const elementoExistente2 = cambio.children[1];
+    cambio.insertBefore(motoviajerocambio, elementoExistente2);
+    //   `  ---------remover elemento(ser motoposada)-------`
+    var elementomp = cambio.children[0];
+    cambio.removeChild(elementomp);
+    //--------------------------------------------------
+    //---remocion de elementos en solicitudes---
+    const solicitudesborr = document.querySelector('#quienes_somos')
+    var elementos2 = solicitudesborr.children[1];
+    solicitudesborr.removeChild(elementos2);
+
+    //---remocion de elementos en comentarios---
+    const comentariosborr = document.querySelector('#servicios')
+    var elementos1 = comentariosborr.children[1]
+    comentariosborr.removeChild(elementos1)
+        //----creacion de comentario----------------
+
 
 
 

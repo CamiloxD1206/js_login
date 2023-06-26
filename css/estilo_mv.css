@@ -46,6 +46,10 @@ ul {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
 .dropdown-item:visited {
     color: black;
 }
@@ -90,6 +94,10 @@ a:visited {
 li:hover {
     background-color: rgba(128, 128, 128, 0.349);
     border-radius: 10px;
+}
+
+.dropdown-menu {
+    text-align: center;
 }
 
 .funcion2 {
