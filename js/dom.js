@@ -15,7 +15,7 @@
 
      }
  }
- //-------------------------------------------------
+ //--------------modal inicios sesion-----------------------------------
  const modal = document.querySelector('.sesion');
  const open_modal = document.querySelector('.centro');
  const modal_close = document.querySelector('.cerrar')
@@ -32,3 +32,19 @@
      open_modal.classList.remove('centro_show')
 
  })
+ //------------modal registro-------------------------------- const modal = document.querySelector('.sesion');
+ const modal2 = document.querySelector('.registrarse');
+ const open_modal2 = document.querySelector('.contendordelregistro');
+ const modal_close2 = document.querySelector('.cancelar');
+ console.log(modal_close2)
+ 
+ modal2.addEventListener('click', () => {
+   open_modal2.classList.add('contendordelregistro2');
+ });
+
+ 
+ modal_close2.addEventListener('click', () => {
+    open_modal2.classList.remove('contendordelregistro2');
+  });
+ 
+ 

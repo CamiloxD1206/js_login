@@ -19,7 +19,7 @@ body {
 
 .contenedor {
     display: grid;
-    grid-template-areas: "header nav  " "bienvenida bienvenida" "main  main  " "footer footer";
+    grid-template-areas: " header nav  " "bienvenida bienvenida" "main  main  " "footer footer";
 }
 
 #servicios {
@@ -122,6 +122,7 @@ p {
 }
 
 #quienes_somos {
+    text-align:center;
     background-color: rgba(128, 128, 128, 0.349);
     margin: 20px;
     border-radius: 20px;
@@ -196,6 +197,7 @@ p {
     transition: opacity.2s;
 }
 
+
 .centro_show {
     opacity: 1;
     pointer-events: unset;
@@ -219,4 +221,30 @@ h2 {
 .form-group input {
     width: 100%;
     padding: 10px;
+}
+/* //-------------------------- */
+.registro{
+    color: black;
+    background-color: white;
+    width:40%;
+    height:400px;
+    padding:3%;
+    border-radius:10px;
+
+}
+.contendordelregistro{
+    margin-top:10%;
+    position: fixed;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    display: flex;
+    justify-content: center;
+    opacity:0;
+    pointer-events:none;
+}
+.contendordelregistro2{
+    opacity:1;
+    pointer-events:unset;
 }

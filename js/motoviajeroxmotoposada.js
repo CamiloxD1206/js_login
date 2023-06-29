@@ -28,6 +28,10 @@ function motoposada() {
     //--------eliminacion-enlaces antiguos
     var elemento = lista.children[3];
     lista.removeChild(elemento);
+    //eliminacion de mis rutas para motoposada
+    const soliborr=document.querySelector('.iniciomp')
+    const soliborr2 = document.querySelector('.borrar_soli')
+    soliborr.removeChild(soliborr2)
     //------------------dropdown-------------------
     const cambio = document.querySelector('.dropdown-menu ');
     const motoviajerocambio = document.createElement('li');
@@ -71,7 +75,7 @@ function motoposada() {
     comentario2.classList.add('comentarios2')
     const titulocomen2 = document.createElement('h4')
     titulocomen2.classList.add('titulocomen2')
-    titulocomen2.textContent = 'UNDEFINED:'
+    titulocomen2.textContent = 'Wilman:'
     const parracomen2 = document.createElement('p')
     parracomen2.textContent = 'rpm no es un aplicativo móvil con soporte web que sirve para viajar'
     comentario2.appendChild(titulocomen2)
@@ -84,7 +88,7 @@ function motoposada() {
     imagensoli.src = 'img/crash.png';
     divimgsoli.appendChild(imagensoli)
     solicitudesborr.appendChild(divimgsoli)
-    console.log(divimgsoli)
+   
 
 
 
